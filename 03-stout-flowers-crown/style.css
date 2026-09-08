@@ -1,15 +1,22 @@
-body {
-  background-color: #b3C190; /* Ou #0a0a0a pour un noir/gris très sombre */
+html, body {
   margin: 0;
-  min-height: 100vh;
+  padding: 0;
+  background-color: #b3c190;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .crown-wrapper {
   position: relative;
-  display: block;
   width: 100%;
-  max-width: 160px;
-  margin: 20px auto;
+  max-width: 380px; /* Taille contrôlée du composant */
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .crown-halo-bg {
@@ -17,10 +24,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 380px;
-  height: 380px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  background: radial-gradient(circle, #C1D461 0%, transparent 70%);
+  background: radial-gradient(circle, #c1d461 0%, transparent 70%);
   filter: blur(10px);
   z-index: 1;
 }
@@ -29,7 +36,7 @@ body {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: auto;
+  height: 100%;
   overflow: visible;
 }
 
@@ -42,3 +49,4 @@ body {
   stroke-linejoin: round;
   stroke-linecap: round;
 }
+  
